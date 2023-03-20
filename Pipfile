@@ -4,16 +4,21 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-fastapi = "*"
-uvicorn = {extras = ["standard"], version = "*"}
-requests = "*"
 sqlalchemy = "*"
-psycopg2 = "*"
+fastapi = "*"
+passlib = "*"
+jose = "*"
+uvicorn = "*"
 alembic = "*"
+pydantic = "*"
+psycopg2 = "*"
 faker = "*"
-pydantic = {extras = ["email"], version = "*"}
+libgravatar = "*"
+python-jose = "*"
+python-multipart = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.10"
+python_full_version = "3.10.5"
