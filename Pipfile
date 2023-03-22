@@ -4,18 +4,24 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-sqlalchemy = "*"
 fastapi = "*"
-passlib = "*"
-jose = "*"
-uvicorn = "*"
 alembic = "*"
-pydantic = "*"
 psycopg2 = "*"
+sqlalchemy = "*"
+uvicorn = {extras = ["standart"], version = "*"}
+pydantic = {extras = ["email"], version = "*"}
 faker = "*"
 libgravatar = "*"
 python-jose = "*"
+passlib = "*"
 python-multipart = "*"
+fastapi-mail = "*"
+redis = "*"
+fastapi-limiter = "*"
+python-dotenv = "*"
+django = "*"
+pymongo = {extras = ["tls"], version = "*"}
+mongoengine = "*"
 
 [dev-packages]
 
